@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeriVox - O Som da Confiança</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#historia" class="nav-link">História</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#problema" class="nav-link">Problema</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#solucao" class="nav-link">Solução</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#diferenciais" class="nav-link">Diferenciais</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#mercado" class="nav-link">Mercado</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#clientes" class="nav-link">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#investidores" class="nav-link">Investidores</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="sound-waves">
+                <div class="wave wave-1"></div>
+                <div class="wave wave-2"></div>
+                <div class="wave wave-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="Logo_Fundo_Removido.png" alt="VeriVox" class="hero-logo-img">
+            </div>
+            <h1 class="hero-title">O som da confiança é o som do VeriVox.</h1>
+            <p class="hero-subtitle">IA brasileira que detecta vozes falsas e deepfakes em tempo real.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="goToContact()">
+                    <i class="fas fa-comments"></i>
+                    Falar com o time
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- História Section -->
+    <section id="historia" class="historia">
+        <div class="historia-background">
+            <div class="call-center-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="historia-content">
+                <h2 class="section-title">Por que criamos o VeriVox</h2>
+                <div class="historia-text">
+                    <p>O VeriVox nasceu de uma preocupação real: a explosão das fraudes por voz e deepfakes que ameaçam a confiança nos canais de atendimento.</p>
+                    <p>Somos uma startup brasileira criada para proteger empresas e pessoas com tecnologia de ponta desenvolvida no Brasil, para o Brasil.</p>
+                </div>
+                <div class="voice-analysis-animation">
+                    <div class="audio-signal">
+                        <div class="signal-bar"></div>
+                        <div class="signal-bar"></div>
+                        <div class="signal-bar"></div>
+                        <div class="signal-bar"></div>
+                        <div class="signal-bar"></div>
+                    </div>
+                    <div class="ai-graph">
+                        <div class="graph-line"></div>
+                        <div class="graph-points">
+                            <div class="point"></div>
+                            <div class="point"></div>
+                            <div class="point"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema Section -->
+    <section id="problema" class="problema">
+        <div class="problema-background">
+            <div class="distorted-waves"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title">Fraudes por voz cresceram 1.300% em um ano.</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="stat-number">4.700</div>
+                    <div class="stat-label">tentativas de golpe por hora no Brasil</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number">42%</div>
+                    <div class="stat-label">dos brasileiros já sofreram fraude financeira</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-number">R$ 200M+</div>
+                    <div class="stat-label">em prejuízos causados por deepfakes em 2025</div>
+                </div>
+            </div>
+            <div class="problema-cta">
+                <p class="cta-text">A pergunta não é mais 'quem está ligando', mas 'essa voz é real?'</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solução Section -->
+    <section id="solucao" class="solucao">
+        <div class="container">
+            <h2 class="section-title">Nossa Solução</h2>
+            <div class="solucao-grid">
+                <div class="solucao-card">
+                    <div class="solucao-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>VoiceMatch</h3>
+                    <p>Autenticação por voz legítima com precisão de 99%</p>
+                </div>
+                <div class="solucao-card">
+                    <div class="solucao-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3>BlockList Vocal</h3>
+                    <p>Base proprietária de vozes fraudulentas</p>
+                </div>
+                <div class="solucao-card">
+                    <div class="solucao-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>IA Antifake</h3>
+                    <p>Detecção de deepfakes e vozes sintéticas em tempo real</p>
+                </div>
+                <div class="solucao-card">
+                    <div class="solucao-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Integração via API</h3>
+                    <p>Compatível com sistemas bancários e de call center</p>
+                </div>
+            </div>
+            <div class="solucao-text">
+                <p>Enquanto outros apenas autenticam, o VeriVox detecta, bloqueia e aprende.</p>
+                <p class="highlight">Segurança invisível, performance real.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais Section -->
+    <section id="diferenciais" class="diferenciais">
+        <div class="diferenciais-background">
+            <div class="gradient-horizontal"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title">O que faz o VeriVox diferente</h2>
+            <div class="diferenciais-grid">
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>Feito por brasileiros, para o Brasil</h3>
+                    <p>Entendemos as fraudes e sotaques locais</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>IA proprietária com aprendizado contínuo</h3>
+                    <p>Quanto mais usamos, mais inteligente fica</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Suporte dedicado e integração rápida</h3>
+                    <p>Atendimento humano e técnico local</p>
+                </div>
+            </div>
+            <div class="diferenciais-highlight">
+                <p>Mais que tecnologia — uma camada de confiança feita sob medida para o mercado brasileiro.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mercado Section -->
+    <section id="mercado" class="mercado">
+        <div class="container">
+            <h2 class="section-title">Mercado e Estatísticas</h2>
+            <div class="mercado-content">
+                <div class="mercado-text">
+                    <p>Estamos em um mercado em expansão global — e o Brasil é o país mais afetado por fraudes por voz no mundo.</p>
+                    <p>Ser um dos primeiros players significa estar na linha de frente da inovação.</p>
+                </div>
+                <div class="mercado-charts">
+                    <div class="chart-container">
+                        <div class="chart-title">Crescimento da Biometria Vocal</div>
+                        <div class="chart-bar">
+                            <div class="bar-fill" data-value="2023">US$ 2,3 bi</div>
+                            <div class="bar-fill" data-value="2032">US$ 15,6 bi</div>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-title">Detecção de Deepfakes</div>
+                        <div class="chart-value">CAGR 41,5% até 2030</div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-title">Impacto no Brasil</div>
+                        <div class="chart-value">R$ 1,5 bilhão em fraudes evitadas até 2027</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientes Section -->
+    <section id="clientes" class="clientes">
+        <div class="container">
+            <h2 class="section-title">Soluções para quem fala com o Brasil todos os dias</h2>
+            <div class="clientes-grid">
+                <div class="cliente-card">
+                    <div class="cliente-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Bancos e Fintechs</h3>
+                    <p>Segurança KYC e prevenção de fraude em transações</p>
+                </div>
+                <div class="cliente-card">
+                    <div class="cliente-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Centers e BPOs</h3>
+                    <p>Verificação rápida e redução de falsos positivos</p>
+                </div>
+                <div class="cliente-card">
+                    <div class="cliente-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Saúde e Telemedicina</h3>
+                    <p>Validação segura da identidade do paciente</p>
+                </div>
+                <div class="cliente-card">
+                    <div class="cliente-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Governo e Setor Público</h3>
+                    <p>Autenticação vocal de cidadãos com LGPD</p>
+                </div>
+            </div>
+            <div class="clientes-cta">
+                <button class="btn btn-primary" onclick="goToContact()">
+                    <i class="fas fa-rocket"></i>
+                    Quero integrar o VeriVox na minha operação
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipe Section -->
+    <section id="equipe" class="equipe">
+        <div class="container">
+            <h2 class="section-title">Equipe Fundadora</h2>
+            <div class="equipe-intro">
+                <p>Por trás do VeriVox está um time de cinco fundadores formados em Sistemas de Informação pela FIAP, unidos pelo propósito de criar uma tecnologia brasileira capaz de redefinir a segurança em comunicações por voz.</p>
+                <p>Cada integrante traz uma combinação única de expertise técnica, visão de produto e estratégia de negócios, formando o equilíbrio ideal entre inovação e execução.</p>
+            </div>
+            <div class="equipe-grid">
+                <div class="membro-card">
+                    <div class="membro-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Alexandre Ilha de Vilhena</h3>
+                    <p class="membro-cargo">Líder Técnico de IA e Machine Learning</p>
+                    <p class="membro-desc">Responsável pela arquitetura analítica do motor acústico, pipelines de voice-match e detecção de deepfake, garantindo precisão e performance do modelo de IA.</p>
+                </div>
+                <div class="membro-card">
+                    <div class="membro-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Bruno Norões de Magalhães</h3>
+                    <p class="membro-cargo">Gerente de Produto e Estratégia de Negócios</p>
+                    <p class="membro-desc">Define a visão, o roadmap e o posicionamento de mercado do VeriVox, conectando as necessidades dos clientes às metas estratégicas da empresa.</p>
+                </div>
+                <div class="membro-card">
+                    <div class="membro-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Erik Hoon Ko</h3>
+                    <p class="membro-cargo">Líder de Produto e Marketing</p>
+                    <p class="membro-desc">Cuida da experiência do usuário, marketing digital e comunicação B2B, fortalecendo a presença da marca e validando hipóteses junto a clientes-piloto.</p>
+                </div>
+                <div class="membro-card">
+                    <div class="membro-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Luca Moraes Zaharic</h3>
+                    <p class="membro-cargo">Engenheiro de Software</p>
+                    <p class="membro-desc">Responsável pelo desenvolvimento da plataforma SaaS e integração via API, garantindo escalabilidade, segurança e robustez da infraestrutura.</p>
+                </div>
+                <div class="membro-card">
+                    <div class="membro-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Rafael Fiel Cruz Miranda</h3>
+                    <p class="membro-cargo">Analista Financeiro</p>
+                    <p class="membro-desc">Constrói o modelo financeiro da startup, projeções de receita, precificação e análise de ROI, além de conduzir estratégias de investimento e sustentabilidade.</p>
+                </div>
+            </div>
+            <div class="equipe-footer">
+                <p>Juntos, transformamos a voz em confiança — e a tecnologia em segurança.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investidores Section -->
+    <section id="investidores" class="investidores">
+        <div class="investidores-background">
+            <div class="shield-outline"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title">Investir no futuro da autenticação por voz</h2>
+            <div class="investidores-content">
+                <p>O VeriVox é um dos primeiros players do mercado brasileiro de detecção de deepfakes.</p>
+                <p>Estamos abrindo rodada de R$ 480 mil por 10% da empresa, com break-even em 18 meses e ROI de 210% em 3 anos.</p>
+                <p class="highlight">Um mercado de R$ 15 bilhões em formação — e nós estamos na largada.</p>
+            </div>
+            <div class="investidores-buttons">
+                <button class="btn btn-primary" onclick="goToPitchDeck()">
+                    <i class="fas fa-presentation"></i>
+                    Acessar apresentação completa
+                </button>
+                <button class="btn btn-secondary" onclick="goToContact()">
+                    <i class="fas fa-handshake"></i>
+                    Entrar em contato para investimento
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demonstração Section -->
+    <section id="demonstracao" class="demonstracao">
+        <div class="container">
+            <h2 class="section-title">Demonstração do Protótipo</h2>
+            <div class="video-container">
+                <video autoplay muted loop class="prototype-video">
+                    <source src="Video_Apresentando_Prototipo.MP4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+                <div class="video-overlay">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="demonstracao-text">
+                <p>Verificação em tempo real. IA que aprende a cada chamada.</p>
+                <p class="highlight">Este é o som da confiança.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="contato-background">
+            <div class="minimal-waves"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title">Fale Conosco</h2>
+            <div class="contato-tabs">
+                <button class="tab-button active" data-tab="investidor">
+                    <i class="fas fa-chart-line"></i>
+                    Sou investidor
+                </button>
+                <button class="tab-button" data-tab="cliente">
+                    <i class="fas fa-building"></i>
+                    Sou cliente corporativo
+                </button>
+            </div>
+            <div class="contato-content">
+                <form class="contact-form" id="investidor-form">
+                    <div class="form-group">
+                        <input type="text" id="nome-investidor" name="nome" placeholder="Nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="empresa-investidor" name="empresa" placeholder="Empresa/Fundo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="cargo-investidor" name="cargo" placeholder="Cargo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email-investidor" name="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem-investidor" name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Falar com o time VeriVox
+                    </button>
+                </form>
+                <form class="contact-form hidden" id="cliente-form">
+                    <div class="form-group">
+                        <input type="text" id="nome-cliente" name="nome" placeholder="Nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="empresa-cliente" name="empresa" placeholder="Empresa" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="cargo-cliente" name="cargo" placeholder="Cargo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email-cliente" name="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem-cliente" name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Falar com o time VeriVox
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>VeriVox — tecnologia brasileira para um mundo mais seguro de se ouvir.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
