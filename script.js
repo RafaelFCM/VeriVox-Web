@@ -81,7 +81,7 @@ function initScrollAnimations() {
     }, observerOptions);
 
     // Adicionar classes de animação aos elementos
-    const animatedElements = document.querySelectorAll('.stat-card, .solucao-card, .diferencial-card, .cliente-card, .membro-card, .chart-container');
+    const animatedElements = document.querySelectorAll('.stat-card, .solucao-card, .diferencial-card, .cliente-card, .membro-card, .chart-container, .tip-card');
     animatedElements.forEach((el, index) => {
         el.classList.add('fade-in');
         el.style.animationDelay = `${index * 0.1}s`;
@@ -89,7 +89,7 @@ function initScrollAnimations() {
     });
 
     // Animações específicas para diferentes seções
-    const leftSlideElements = document.querySelectorAll('.historia-text, .mercado-text');
+    const leftSlideElements = document.querySelectorAll('.historia-text, .mercado-text, .antifraude-intro');
     leftSlideElements.forEach(el => {
         el.classList.add('slide-in-left');
         observer.observe(el);
@@ -438,7 +438,7 @@ window.addEventListener('load', function () {
 
 // Efeito de hover nos cards
 function initCardHoverEffects() {
-    const cards = document.querySelectorAll('.stat-card, .solucao-card, .diferencial-card, .cliente-card, .membro-card');
+    const cards = document.querySelectorAll('.stat-card, .solucao-card, .diferencial-card, .cliente-card, .membro-card, .tip-card');
 
     cards.forEach(card => {
         card.addEventListener('mouseenter', function () {
@@ -568,6 +568,31 @@ function initParticleEffect() {
 
 // Inicializar efeito de partículas
 initParticleEffect();
+
+// Animação especial para ícones da seção antifraude
+function initAntifraudeIconAnimations() {
+    const tipIcons = document.querySelectorAll('.tip-icon');
+
+    tipIcons.forEach((icon, index) => {
+        // Adicionar delay escalonado para cada ícone
+        icon.style.animationDelay = `${index * 0.5}s`;
+
+        // Adicionar efeito de hover especial
+        icon.addEventListener('mouseenter', function () {
+            this.style.animation = 'none';
+            this.style.transform = 'scale(1.2) rotate(5deg)';
+            this.style.transition = 'all 0.3s ease';
+        });
+
+        icon.addEventListener('mouseleave', function () {
+            this.style.animation = 'icon-pulse 3s ease-in-out infinite';
+            this.style.transform = 'scale(1) rotate(0deg)';
+        });
+    });
+}
+
+// Inicializar animações dos ícones antifraude
+initAntifraudeIconAnimations();
 
 // Performance optimization
 function debounce(func, wait) {
